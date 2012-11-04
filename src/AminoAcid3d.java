@@ -3,6 +3,7 @@ import resources.AminoAcids;
 public class AminoAcid3d {
 	private double x, y, z;
 	private int name;
+	private int localContact, globalContact;
 
 	/**
 	 * constructor with a string field, which must be interpreted to the
@@ -55,5 +56,38 @@ public class AminoAcid3d {
 
 	public void setName(int name) {
 		this.name = name;
+	}
+
+	public String getNameOneLetter() {
+		return AminoAcids.reverse[name];
+	}
+
+	public void addLocalContact() {
+		localContact++;
+	}
+
+	public void addGlobalContact() {
+		globalContact++;
+	}
+
+	public int getLocalContacts() {
+		return localContact;
+	}
+
+	public int getGlobalContacts() {
+		return globalContact;
+	}
+
+	public double calculateDistance(AminoAcid3d other) {
+		double xsq = this.x - other.x;
+		xsq = xsq*xsq;
+		
+		double ysq = this.y - other.y;
+		ysq = ysq*ysq;
+		
+		double zsq = this.z - other.z;
+		zsq = zsq*zsq;
+		
+		return Math.sqrt(xsq + ysq + zsq);
 	}
 }

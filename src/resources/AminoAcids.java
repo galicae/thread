@@ -2,27 +2,27 @@ package resources;
 
 public final class AminoAcids {
 
-	// three letter code
-	public static int ala = 0;
-	public static int cys = 1;
-	public static int asp = 2;
-	public static int glu = 3;
-	public static int phe = 4;
-	public static int gly = 5;
-	public static int his = 6;
-	public static int ile = 7;
-	public static int lys = 8;
-	public static int leu = 9;
-	public static int met = 10;
-	public static int asn = 11;
-	public static int pro = 12;
-	public static int gln = 13;
-	public static int arg = 14;
-	public static int ser = 15;
-	public static int thr = 16;
-	public static int val = 17;
-	public static int trp = 18;
-	public static int tyr = 19;
+	// THRee letter code
+	public static int ALA = 0;
+	public static int CYS = 1;
+	public static int ASP = 2;
+	public static int GLU = 3;
+	public static int PHE = 4;
+	public static int GLY = 5;
+	public static int HIS = 6;
+	public static int ILE = 7;
+	public static int LYS = 8;
+	public static int LEU = 9;
+	public static int MET = 10;
+	public static int ASN = 11;
+	public static int PRO = 12;
+	public static int GLN = 13;
+	public static int ARG = 14;
+	public static int SER = 15;
+	public static int THR = 16;
+	public static int VAL = 17;
+	public static int TRP = 18;
+	public static int TYR = 19;
 
 	// one letter code
 	public static int A = 0;
@@ -95,47 +95,53 @@ public final class AminoAcids {
 			return W;
 		} else if (s.equals("Y")) {
 			return Y;
-		} else if (s.equals("ala")) {
+		} else if (s.equals("ALA")) {
 			return A;
-		} else if (s.equals("cys")) {
+		} else if (s.equals("CYS")) {
 			return C;
-		} else if (s.equals("asp")) {
+		} else if (s.equals("ASP")) {
 			return D;
-		} else if (s.equals("glu")) {
+		} else if (s.equals("GLU")) {
 			return E;
-		} else if (s.equals("phe")) {
+		} else if (s.equals("PHE")) {
 			return F;
-		} else if (s.equals("gly")) {
+		} else if (s.equals("GLY")) {
 			return G;
-		} else if (s.equals("his")) {
+		} else if (s.equals("HIS")) {
 			return H;
-		} else if (s.equals("ile")) {
+		} else if (s.equals("ILE")) {
 			return I;
-		} else if (s.equals("lys")) {
+		} else if (s.equals("LYS")) {
 			return K;
-		} else if (s.equals("leu")) {
+		} else if (s.equals("LEU")) {
 			return L;
-		} else if (s.equals("met")) {
+		} else if (s.equals("MET")) {
 			return M;
-		} else if (s.equals("asn")) {
+		} else if (s.equals("ASN")) {
 			return N;
-		} else if (s.equals("pro")) {
+		} else if (s.equals("PRO")) {
 			return P;
-		} else if (s.equals("gln")) {
+		} else if (s.equals("GLN")) {
 			return Q;
-		} else if (s.equals("arg")) {
+		} else if (s.equals("ARG")) {
 			return R;
-		} else if (s.equals("ser")) {
+		} else if (s.equals("SER")) {
 			return S;
-		} else if (s.equals("thr")) {
+		} else if (s.equals("THR")) {
 			return T;
-		} else if (s.equals("val")) {
+		} else if (s.equals("VAL")) {
 			return V;
-		} else if (s.equals("trp")) {
+		} else if (s.equals("TRP")) {
 			return W;
-		} else if (s.equals("tyr")) {
+		} else if (s.equals("TYR")) {
 			return Y;
+		} else if (Character.isUpperCase(s.codePointAt(0))) {
+			return C;
 		} else
 			return -1;
 	}
+
+	public static String[] reverse = { "A", "C", "D", "E", "F", "G", "H", "I",
+			"K", "L", "M", "N", "P", "Q", "R", "S", "T", "V", "W", "Y" };
+
 }
