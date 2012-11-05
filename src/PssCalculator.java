@@ -138,8 +138,8 @@ public class PssCalculator {
 			for (int j = i + 1; j < aminoArray.length; j++) {
 				double distance = aminoArray[i]
 						.calculateDistance(aminoArray[j]);
-				if (distance < 6.0) { // we got a contact
-					if (j - i < 5) { // a local contact!
+				if (distance < 6.00) { // we got a contact
+					if (j - i < 6) { // a local contact!
 						aminoArray[i].addLocalContact();
 						aminoArray[j].addLocalContact();
 					} else { // a global contact

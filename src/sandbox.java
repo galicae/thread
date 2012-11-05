@@ -34,8 +34,8 @@ public class sandbox {
 			}
 			{
 				System.out.println(amAr[i].getNameOneLetter() + " "
-						+ structure[f[i]] + "    " + amAr[i].getGlobalContacts()
-						+ "  " + amAr[i].getLocalContacts());
+						+ structure[f[i]] + "    " + amAr[i].getLocalContacts()
+						+ "  " + amAr[i].getGlobalContacts());
 				i++;
 			}
 		}
